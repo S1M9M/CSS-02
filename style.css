@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling Header Section */
+header {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+header:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    transition: transform 0.25s;
+}
+
+header .left {
+    font-size: 1em;
+    transform: translateY(-80px);
+}
+
+header .right {
+    font-size: 1em;
+    transform: translateY(-80px);
+}
+
+header:hover .center {
+    transform: scale(105%);
+}
+
+header:hover .left {
+    transform: translateY(20px);
+    font-size: 1em;
+}
+
+header:hover .right {
+    transform: translateY(20px);
+    font-size: 1em;
+
+}
+
+/* Styling Hero Section */
+
+.hero_section {
+    background-image: url('victor-rosario-bOlCggIMYrQ-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding-top: 1em;
+}
+
+.hero_section h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 5em;
+    color: rgb(255, 174, 82);
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.hero_section p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    text-align: justify;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    opacity: 0.8;
+}
+
+/* Styling Gallery Section */
+
+.gallery {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    text-shadow: 0 0 2px rgb(91, 91, 91);
+}
+
+.gallery_section {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.gallery_section img {
+    width: 30%;
+    margin-bottom: 5%;
+    border-radius: 1%;
+    transition: transform 0.25s;
+}
+
+.gallery_section img:hover {
+    transform: scale(102%);
+    box-shadow: 0 0 15px rgb(156, 156, 156);
+}
+
+/* Styling Footer Section */
+
+footer {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Social Media */
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    padding-top: 3em;
+}
+
+.social_media a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.social_media .github {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 3px;
+    border-color: brown;
+    color: brown;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+/* Copy_right */
+
+.copy_right {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 3em;
+    color: rgb(180, 180, 180);
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        background-color: rgb(95, 0, 179);
+
+    }
+
+    .social_media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social_media .github,
+    .gmail,
+    .codepen {
+        color: #fff;
+        width: 100vw;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .social_media .gmail:hover,
+    .github:hover,
+    .codepen:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .social_media .github {
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
